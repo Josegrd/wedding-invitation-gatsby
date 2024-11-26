@@ -40,7 +40,7 @@ const IndexPage: FC<PageProps> = () => {
             </Box>
           </>
         ) : (
-          <RightScreenPage setScrollPage={setScollPage} />
+          <RightScreenPage setScrollPage={setScollPage}/>
         )}
       </Flex>
     </>

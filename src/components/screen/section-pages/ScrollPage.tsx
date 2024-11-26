@@ -1,12 +1,15 @@
 import React from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import OpeningSection from './OpeningSection';
 import WelcomeSection from './WelcomeSection';
 
 const ScrollPage = () => {
   return (
+    <Flex
+      width={'100%'}
+      justify={'center'}>
     <Box
-      width={{ base: '100%', lg: '500px' }}
+      width="500px"
       overflowY="auto"
       height="100vh"
       marginLeft={{ base: '0', lg: 'calc(100% - 500px)' }}
@@ -14,6 +17,7 @@ const ScrollPage = () => {
       <WelcomeSection />
       <OpeningSection />
     </Box>
+    </Flex>
   );
 };
 

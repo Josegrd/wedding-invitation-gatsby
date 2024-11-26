@@ -1,5 +1,5 @@
 import React, { Dispatch, FC, SetStateAction, useState } from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
 import HeadingPoppins from '../heading/HeadingPoppins';
 import HeadingNewsreaderItalic from '../heading/HeadingNewsreaderItalic';
 import HeadingButlerLight from '../heading/HeadingButlerLight';
@@ -22,10 +22,13 @@ const RightSection: FC<RightSectionProps> = ({ setScrollPage }) => {
 
   return (
     <>
+    <Flex
+      width={'100%'}
+      justify={'center'}>
       <Box
         height={'100vh'}
         position="relative"
-        width="100%"
+        width="500px"
         marginLeft={{ base: '0', lg: 'calc(100% - 500px)' }}
       >
         <Box
@@ -60,6 +63,7 @@ const RightSection: FC<RightSectionProps> = ({ setScrollPage }) => {
           </Box>
         </Box>
       </Box>
+      </Flex>
     </>
   );
 };
