@@ -5,7 +5,7 @@ export default function Html(props) {
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="../public/favicon.png" />
         <title>{props.title}</title>
         {props.headComponents}
       </head>
