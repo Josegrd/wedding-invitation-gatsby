@@ -4,21 +4,34 @@ import { Fade } from 'react-awesome-reveal';
 import { ArrowLeftIcon, ArrowRightIcon } from '../../../assets/icons/Icon';
 import FsLightbox from 'fslightbox-react';
 import images from '../../../components/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 const OpeningSection = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  // const [currentSlide, setCurrentSlide] = useState(0);
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
   });
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % images.length); // Loop back to the first image
-  };
 
-  const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length); // Loop to the last image
-  };
+  // const handleNext = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % images.length); // Loop back to the first image
+  // };
+
+  // const handlePrev = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + images.length) % images.length); // Loop to the last image
+  // };
 
   const handleSlideClick = (index: number) => {
     setLightboxController({
@@ -83,41 +96,48 @@ const OpeningSection = () => {
           justifyContent={'space-between'}
           width={'100%'}
           userSelect={'none'}
+          height="400px"
         >
-          <Box
-            overflow="hidden"
-            width="100%"
-            maxWidth="840px"
-            display="flex"
-            flexFlow={'wrap'}
-            padding={'0px'}
-          >
-            <Box display={'flex'} boxSizing="border-box" outline={'none'}>
-              {images.map((src, index) => (
-                <Box
-                  key={index}
+          <Swiper
+          slidesPerView={1.5} 
+          centeredSlides={true} 
+          loop={true} 
+          autoplay={{ delay: 3000, disableOnInteraction: false }}           navigation={{
+            nextEl: '.next-button', 
+            prevEl: '.prev-button', 
+          }}
+          speed={2000}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          modules={[Pagination, Navigation, Autoplay]}           className="mySwiper"
+          spaceBetween={5}
+        >
+          {images.map((src, index) => {            
+            return(
+            <SwiperSlide key={index}>
+              <Box
+                onClick={() => handleSlideClick(index)}
+                transform={index === activeIndex ? 'scale(1.2)' : 'scale(1)'}
+                transition="transform 3s ease-in-out, opacity 0.5s ease-in-out"
+                cursor="pointer"
+                width="280px"
+                height="390px"
+              >
+                <Image
+                  src={src}
                   width="280px"
-                  height={'390px'}
-                  transform={`translateX(-${currentSlide * 150}px)`}
-                  transition="transform 1.2s ease-in-out"
-                  style={{ cursor: 'pointer', marginBottom: '20px' }}
-                  onClick={() => handleSlideClick(index)}
-                  margin={'0'}
-                >
-                  <Image
-                    src={src}
-                    width="280px"
-                    height={'390px'}
-                    objectFit={'cover'}
-                    objectPosition={'center center'}
-                    border={'10px solid transparent'}
-                    alt={`Slide ${index + 1}`}
-                  />
-                </Box>
-              ))}
-            </Box>
-          </Box>
+                  height="390px"
+                  objectFit="cover"
+                  borderRadius="2px"
+                  alt={`Slide ${index + 1}`}
+                />
+              </Box>
+            </SwiperSlide>
+          )})}
+        </Swiper>
+          <Box 
+            marginTop={'20px'}>
           <Button
+            className='next-button'
             type="button"
             position="absolute"
             right="2.5rem"
@@ -131,7 +151,9 @@ const OpeningSection = () => {
             textAlign="center"
             width="70px"
             padding="5px 10px"
-            onClick={handleNext}
+            // onClick={handleNext}
+            transform="translateY(-50%)"
+
           >
             <Box
               display="flex"
@@ -145,6 +167,7 @@ const OpeningSection = () => {
             </Box>
           </Button>
           <Button
+            className='prev-button'
             type="button"
             position="absolute"
             right="120px"
@@ -159,7 +182,8 @@ const OpeningSection = () => {
             textAlign="center"
             width="70px"
             padding="5px 10px"
-            onClick={handlePrev}
+            // onClick={handlePrev}
+            transform="translateY(-50%)"
           >
             <Box
               display="flex"
@@ -172,6 +196,7 @@ const OpeningSection = () => {
               <ArrowRightIcon />
             </Box>
           </Button>
+          </Box>
         </Box>
         <FsLightbox
           toggler={lightboxController.toggler}

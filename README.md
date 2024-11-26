@@ -51,9 +51,6 @@ You can check out the live demo of this project here:
 
 [Wedding Invitation - Live Demo](https://wedding-invitation-gatsby.vercel.app/)
 
-## 🤔 What's inside?
-
-A quick look at the top-level files and directories you'll see in this project.
 
 ## 🛠️ Technologies Used
 - Gatsby: A static site generator that powers fast, optimized websites.
