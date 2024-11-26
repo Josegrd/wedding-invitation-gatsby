@@ -9,6 +9,7 @@ const MusicButton = () => {
 
   useEffect(() => {
     if (audioRef.current) {
+      audioRef.current.loop = true;
       audioRef.current
         .play()
         .then(() => {})
