@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="https://github.com/Josegrd/wedding-invitation-gatsby">
-    <img src="https://raw.githubusercontent.com/Josegrd/wedding-invitation-gatsby/main/assets/logo.png" alt="Wedding Invitation Logo" width="300" />
-  </a>
-</p>
-
 <h1 align="center">
   Wedding Invitation Gatsby
 </h1>
@@ -55,7 +49,7 @@ A modern and elegant wedding invitation website built with Gatsby.
 
 You can check out the live demo of this project here:
 
-[Wedding Invitation - Live Demo](https://wedding-invitation-inv.netlify.app/)
+[Wedding Invitation - Live Demo](https://wedding-invitation-gatsby.vercel.app/)
 
 ## 🤔 What's inside?
 
@@ -76,6 +70,6 @@ The project is deployed on Netlify. To deploy your own project on Netlify:
 
 ## 📄 Notes
 
- # For Question Contact me :
+ ### For Question Contact me :
  1. **Twitter/X : @jsgrd8**
  2. **or contact from here**
