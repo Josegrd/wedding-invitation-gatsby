@@ -1,13 +1,23 @@
-import type { GatsbyConfig } from "gatsby";
-
-const config: GatsbyConfig = {
+module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `The Wedding of Tiffany & Jared`,
+    description: `Website untuk pernikahan Tiffany & Jared`,
+    author: `@invitato`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
-  graphqlTypegen: true,
+  plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Wedding Website`,
+        short_name: `Wedding`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#000000`,
+        display: `standalone`, // Pilih 'standalone' atau 'minimal-ui'
+        icon: `src/images/favicon.png`, // Ganti dengan path ke favicon Anda
+        // Anda bisa menambahkan konfigurasi lebih lanjut untuk PWA seperti splash screens, dll
+      },
+    },
+    // Plugin lain...
+  ],
 };
-
-export default config;
