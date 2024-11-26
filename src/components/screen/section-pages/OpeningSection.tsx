@@ -97,34 +97,40 @@ const OpeningSection = () => {
           width={'100%'}
           userSelect={'none'}
           height="400px"
-        >
+          overflow="hidden"
+          maxWidth="840px"
+          outline={'none'}
+        >            
           <Swiper
           slidesPerView={1.5} 
           centeredSlides={true} 
           loop={true} 
-          autoplay={{ delay: 3000, disableOnInteraction: false }}           navigation={{
+          autoplay={{ delay: 3000, disableOnInteraction: false }}           
+          navigation={{
             nextEl: '.next-button', 
             prevEl: '.prev-button', 
           }}
           speed={2000}
           onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-          modules={[Pagination, Navigation, Autoplay]}           className="mySwiper"
-          spaceBetween={5}
+          modules={[Pagination, Navigation, Autoplay]}           
+          className="mySwiper"
+          spaceBetween={0}
         >
           {images.map((src, index) => {            
             return(
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} style={{margin: 0, padding: 0}}>
               <Box
                 onClick={() => handleSlideClick(index)}
-                transform={index === activeIndex ? 'scale(1.2)' : 'scale(1)'}
+                transform={index === activeIndex ? 'scale(1)' : 'scale(0.9)'}
                 transition="transform 3s ease-in-out, opacity 0.5s ease-in-out"
                 cursor="pointer"
-                width="280px"
                 height="390px"
+                width="100%"
+                margin={0}
               >
                 <Image
                   src={src}
-                  width="280px"
+                  width="100%"
                   height="390px"
                   objectFit="cover"
                   borderRadius="2px"
@@ -134,14 +140,13 @@ const OpeningSection = () => {
             </SwiperSlide>
           )})}
         </Swiper>
-          <Box 
-            marginTop={'20px'}>
+   
           <Button
             className='next-button'
             type="button"
             position="absolute"
             right="2.5rem"
-            bottom="-50px"
+            bottom="-60px"
             alignSelf="center"
             border="1px solid rgb(26, 27, 29)"
             borderRadius={'0px'}
@@ -151,7 +156,7 @@ const OpeningSection = () => {
             textAlign="center"
             width="70px"
             padding="5px 10px"
-            // onClick={handleNext}
+            // onClick={}
             transform="translateY(-50%)"
 
           >
@@ -171,7 +176,7 @@ const OpeningSection = () => {
             type="button"
             position="absolute"
             right="120px"
-            bottom="-50px"
+            bottom="-60px"
             alignSelf="center"
             borderRadius={'0px'}
             background="bgSecondary"
@@ -196,7 +201,6 @@ const OpeningSection = () => {
               <ArrowRightIcon />
             </Box>
           </Button>
-          </Box>
         </Box>
         <FsLightbox
           toggler={lightboxController.toggler}
