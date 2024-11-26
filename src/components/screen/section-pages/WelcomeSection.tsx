@@ -8,16 +8,15 @@ import HeadingNewsreaderItalic from '../../../components/heading/HeadingNewsread
 import images from '../../../components/image';
 
 const WelcomeSection = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(1);
 
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000);
-
+     const interval = setInterval(() => {
+        setCurrentImageIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    }, 4000);
     return () => {
       clearInterval(interval);
     };
@@ -30,9 +29,21 @@ const WelcomeSection = () => {
     }
   };
 
+
   return (
     <Fade duration={1000} direction="up" triggerOnce>
       <Box height="100vh" position="relative" overflow="hidden">
+        {/* {isBlank ? (
+          <Box
+            height="100%"
+            width="100%"
+            backgroundColor="transparent" // Warna latar belakang kosong
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+          >
+          </Box>
+        ) : ( */}
         <Box className="slide">
           {images.map((image, index) => (
             <Box
@@ -53,6 +64,7 @@ const WelcomeSection = () => {
             ></Box>
           ))}
         </Box>
+        {/* )} */}
         <Box
           flex="none"
           width={{ base: '100%', lg: '500px' }}

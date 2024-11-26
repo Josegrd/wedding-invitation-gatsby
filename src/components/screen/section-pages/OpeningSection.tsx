@@ -27,15 +27,7 @@ const OpeningSection = () => {
     });
   };
 
-    // Handle zoom in and zoom out
-  const handleZoomIn = () => {
-    setZoomScale(prevScale => prevScale * 1.2);  // Zoom in by 20%
-  };
-
-  const handleZoomOut = () => {
-    setZoomScale(prevScale => prevScale / 1.2);  // Zoom out by 20%
-  };
-
+  
   return (
     <Box
       id="opening_section"
