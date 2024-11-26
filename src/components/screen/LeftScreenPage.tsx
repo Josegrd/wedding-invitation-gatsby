@@ -1,9 +1,9 @@
+import React from 'react';
 import { Box, Text, useBreakpointValue, VStack } from '@chakra-ui/react';
-
 import { Fade } from 'react-awesome-reveal';
 import HeadingPoppins from '../heading/HeadingPoppins';
 import HeadingButlerLight from '../heading/HeadingButlerLight';
-import React from 'react';
+
 const LeftDesktopSection = () => {
   const displayLeftSection = useBreakpointValue({ base: 'none', lg: 'block' });
 
@@ -17,7 +17,7 @@ const LeftDesktopSection = () => {
       borderRightWidth="8px"
       borderRightStyle="solid"
       borderRightColor="blackAlpha.400"
-      bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('/Left-Desktop.jpg')"
+      bgImage="linear-gradient(rgba(50, 48, 48, 0.5), rgba(50, 48, 48, 0.5)), url('/Image-left-screen.jpg')"
       bgSize="cover"
       bgPosition="center"
       color="alternativeColorText"
@@ -37,7 +37,7 @@ const LeftDesktopSection = () => {
           color="alternativeColorText"
         >
           <HeadingButlerLight fontSize="7xl" lineHeight="1" text="TIFFANY &" />
-          <HeadingButlerLight fontSize="7xl" text="JARED" />
+          <HeadingButlerLight fontSize="7xl" text="JARED" margin='0'/>
         </Box>
         <Fade duration={1000} direction="up" triggerOnce>
           <Text
@@ -46,7 +46,7 @@ const LeftDesktopSection = () => {
             fontFamily="newsreader_italic"
             fontStyle="italic"
             marginTop="18px"
-          >
+            >
             "Aku ingin mencintaimu dengan sederhana; dengan kata yang tak sempat
             diucapkan kayu kepada api yang menjadikannya abu. Aku ingin
             mencintaimu dengan sederhana; dengan isyarat yang tak sempat

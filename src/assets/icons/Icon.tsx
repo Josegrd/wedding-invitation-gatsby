@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 interface SvgIconProps {
   className?: string;
   onClick?: () => void;
 }
 
-const PlayingMusicIcon: React.FC<SvgIconProps> = ({ className }) => (
+const PlayingMusicIcon: FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -23,7 +23,7 @@ const PlayingMusicIcon: React.FC<SvgIconProps> = ({ className }) => (
   </svg>
 );
 
-const CloseMusicIcon: React.FC<SvgIconProps> = ({ className }) => (
+const CloseMusicIcon: FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -42,7 +42,7 @@ const CloseMusicIcon: React.FC<SvgIconProps> = ({ className }) => (
   </svg>
 );
 
-const CloseIcon: React.FC<SvgIconProps> = ({ className }) => (
+const CloseIcon: FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -62,7 +62,7 @@ const CloseIcon: React.FC<SvgIconProps> = ({ className }) => (
   </svg>
 );
 
-const HamburgerIcon: React.FC<SvgIconProps> = ({ className }) => (
+const HamburgerIcon: FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -82,7 +82,7 @@ const HamburgerIcon: React.FC<SvgIconProps> = ({ className }) => (
   </svg>
 );
 
-const ArrowBottomIcon: React.FC<SvgIconProps> = ({ className }) => (
+const ArrowBottomIcon: FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="currentColor"
@@ -97,7 +97,7 @@ const ArrowBottomIcon: React.FC<SvgIconProps> = ({ className }) => (
   </svg>
 );
 
-const ArrowLeftIcon: React.FC<SvgIconProps> = ({ className }) => (
+const ArrowLeftIcon: FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="none"
@@ -118,7 +118,7 @@ const ArrowLeftIcon: React.FC<SvgIconProps> = ({ className }) => (
   </svg>
 );
 
-const ArrowRightIcon: React.FC<SvgIconProps> = ({ className }) => (
+const ArrowRightIcon:FC<SvgIconProps> = ({ className }) => (
   <svg
     stroke="currentColor"
     fill="none"

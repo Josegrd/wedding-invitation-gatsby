@@ -1,5 +1,5 @@
+import React, { FC } from 'react';
 import { Heading } from '@chakra-ui/react';
-import React from 'react';
 
 interface HeadingButlerLightProps {
   margin?: string;
@@ -9,7 +9,7 @@ interface HeadingButlerLightProps {
   text: string;
 }
 
-const HeadingButlerLight: React.FC<HeadingButlerLightProps> = ({
+const HeadingButlerLight: FC<HeadingButlerLightProps> = ({
   margin,
   padding,
   text,

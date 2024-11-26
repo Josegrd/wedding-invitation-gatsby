@@ -23,16 +23,22 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "framer-motion": "^11.0.0",
+    "fslightbox-react": "^1.7.6",
     "gatsby": "^5.11.0",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.14",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-loading": "^2.0.3",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@chakra-ui/cli": "^2.3.0",
+    "@types/fslightbox-react": "^1.7.8",
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.29",
     "@types/react-dom": "^18.0.11",
+    "@types/react-helmet": "^6.1.11",
     "typescript": "^5.0.2"
   }
 }

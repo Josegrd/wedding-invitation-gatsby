@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { FC } from "react";
 import { Link, HeadFC, PageProps } from "gatsby";
 import {
   Box,
@@ -9,7 +9,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-const NotFoundPage: React.FC<PageProps> = () => {
+const NotFoundPage: FC<PageProps> = () => {
   return (
     <Box p={24} fontFamily="-apple-system, Roboto, sans-serif, serif">
       <Heading as="h1" mt={0} mb={16} maxW="container.sm">

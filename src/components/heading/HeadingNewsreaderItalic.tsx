@@ -1,13 +1,13 @@
 import React, { FC } from 'react';
 import { Heading } from '@chakra-ui/react';
 
-interface HeadingPoppinsProps {
+interface HeadingNewsreaderItalicProps {
   margin?: string;
   padding?: string;
   text: string;
 }
 
-const HeadingPoppins: FC<HeadingPoppinsProps> = ({
+const HeadingNewsreaderItalic: FC<HeadingNewsreaderItalicProps> = ({
   margin,
   padding,
   text,
@@ -15,12 +15,11 @@ const HeadingPoppins: FC<HeadingPoppinsProps> = ({
   return (
     <>
       <Heading
-        fontFamily={'poppins'}
-        fontWeight={'bold'}
-        fontSize={'md'}
-        textTransform={'uppercase'}
-        textAlign={'center'}
-        letterSpacing={'2px'}
+        as="h2"
+        fontWeight={'300'}
+        fontFamily="newsreader_italic"
+        fontStyle={'italic'}
+        fontSize={'4xl'}
         margin={margin}
         padding={padding}
       >
@@ -30,4 +29,4 @@ const HeadingPoppins: FC<HeadingPoppinsProps> = ({
   );
 };
 
-export default HeadingPoppins;
+export default HeadingNewsreaderItalic;
