@@ -1,152 +1,81 @@
 <p align="center">
-  <a href="https://github.com/chakra-ui/chakra-ui">
-    <img src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true" alt="Chakra logo" width="300" />
+  <a href="https://github.com/Josegrd/wedding-invitation-gatsby">
+    <img src="https://raw.githubusercontent.com/Josegrd/wedding-invitation-gatsby/main/assets/logo.png" alt="Wedding Invitation Logo" width="300" />
   </a>
 </p>
+
 <h1 align="center">
-  Chakra UI's Gatsby TypeScript Starter
+  Wedding Invitation Gatsby
 </h1>
 
-Start building your Gatsby project with speed using this Chakra UI boilerplate
-with TypeScript.
+A modern and elegant wedding invitation website built with Gatsby.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install Gatsby CLI.**
 
-    Use the Gatsby CLI
-    ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli))
-    to create a new site, specifying the chakra-ui TypeScript starter.
+    To run this project locally, first install the Gatsby CLI by running the following command:
 
     ```shell
-    # create a new Gatsby site using the chakra-ui TypeScript starter
-    gatsby new my-chakra-ui-starter https://github.com/chakra-ui/gatsby-starter-chakra-ui-ts
+    npm install -g gatsby-cli
     ```
 
-1.  **Start developing.**
+2.  **Clone the repository.**
 
-    Navigate into your new site’s directory and start it up.
+    Clone this repository to your local machine:
 
     ```shell
-    cd my-chakra-ui-starter/
+    git clone https://github.com/Josegrd/wedding-invitation-gatsby.git
+    cd wedding-invitation-gatsby
+    ```
+
+3.  **Install dependencies.**
+
+    Run the following command to install the required dependencies:
+
+    ```shell
+    npm install
+    ```
+
+4.  **Start the development server.**
+
+    Run the following command to start the development server:
+
+    ```shell
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+    After this, your site will be available at `http://localhost:8000`.
 
-    Your site is now running at `http://localhost:8000`!
+5.  **Open the source code and start editing!**
 
-    Note: You'll also see a second link: `http://localhost:8000/___graphql`.
-    This is a tool you can use to experiment with querying your data. Learn more
-    about using this tool in the
-    [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries).
+    Open the `wedding-invitation-gatsby` directory in your preferred code editor and begin editing the source code to customize your wedding invitation.
 
-    Open the `my-chakra-ui-starter` directory in your code editor of choice and
-    edit `src/pages/index.js`. Save your changes and the browser will update in
-    real time!
+## 🌐 Live Demo
 
-## 🚀 Quick start (Netlify)
+You can check out the live demo of this project here:
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-chakra-ui-ts)
+[Wedding Invitation - Live Demo](https://wedding-invitation-inv.netlify.app/)
 
 ## 🤔 What's inside?
 
-A quick look at the top-level files and directories you'll see in a typical
-Gatsby project.
+A quick look at the top-level files and directories you'll see in this project.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package.json
-    └── README.md
+## 🛠️ Technologies Used
+- Gatsby: A static site generator that powers fast, optimized websites.
+- Chakra UI: A simple, modular, and accessible component library that helps build responsive websites with ease.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that
-    your project depends on (npm packages) are automatically installed.
+## 💫 Deployment
+The project is deployed on Netlify. To deploy your own project on Netlify:
 
-1.  **`/src`**: This directory will contain all of the code related to what you
-    will see on the front-end of your site (what you see in the browser) such as
-    your site header or a page template. `src` is a convention for “source
-    code”.
+  1. Push your code to a GitHub repository.
+  2. Go to Netlify.
+  3. Sign in or create an account.
+  4. Click on "New site from Git" and link your Github repository
+  5. Follow the prompt to deploy your site
 
-1.  **`.gitignore`**: This file tells git which files it should not track / not
-    maintain a version history for.
+## 📄 Notes
 
-1.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage
-    of the
-    [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/)
-    (if any). These allow customization/extension of default Gatsby settings
-    affecting the browser.
-
-1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby
-    site. This is where you can specify information about your site (metadata)
-    like the site title and description, which Gatsby plugins you’d like to
-    include, etc. (Check out the
-    [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/)
-    for more detail).
-
-1.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of
-    the
-    [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/)
-    (if any). These allow customization/extension of default Gatsby settings
-    affecting pieces of the site build process.
-
-1.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of
-    the
-    [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/)
-    (if any). These allow customization of default Gatsby settings affecting
-    server-side rendering.
-
-1.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This
-    means that you can see this file as a placeholder and replace it with your
-    own license.
-
-1.  **`package.json`**: A manifest file for Node.js projects, which includes
-    things like metadata (the project’s name, author, etc). This manifest is how
-    npm knows which packages to install for your project.
-
-1.  **`README.md`**: A text file containing useful reference information about
-    your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives
-[on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our
-  [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).**
-  It starts with zero assumptions about your level of ability and walks through
-  every step of the process.
-
-- **To dive straight into code samples, head
-  [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check
-  out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the
-  sidebar.
-
-## ⚡Learning Chakra UI
-
-You can find full documentation for Chakra UI at
-[chakra-ui.com](https://chakra-ui.com).
-
-- The setup needed for the library to work with Gatsby is already done for you.
-  Visit the
-  [Getting Started - Gatsby](https://chakra-ui.com/getting-started/gatsby-guide)
-  guide for more options.
-- The [Chakra CLI](https://chakra-ui.com/docs/styled-system/cli) is available to
-  you to generate typings for your custom theme tokens, which is great for IDE
-  autocompletion!
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On Netlify](https://netlify.com)
-
-The fastest way to combine your favorite tools and APIs to build the fastest
-sites, stores, and apps for the web. And also the best place to build, deploy,
-and host your Gatsby sites.
+ # For Question Contact me :
+ 1. **Twitter/X : @jsgrd8**
+ 2. **or contact from here**
