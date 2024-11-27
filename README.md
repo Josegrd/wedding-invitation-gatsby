@@ -78,13 +78,13 @@ You can check out the live demo of this project here:
 - Chakra UI: A simple, modular, and accessible component library that helps build responsive websites with ease.
 
 ## 💫 Deployment
-The project is deployed on Netlify. To deploy your own project on Netlify:
+The project is deployed on Vercel. To deploy your own project on Vercel:
 
   1. Push your code to a GitHub repository.
-  2. Go to Netlify.
+  2. Go to Vercel.
   3. Sign in or create an account.
-  4. Click on "New site from Git" and link your Github repository
-  5. Follow the prompt to deploy your site
+  4. Click on "Add New" -> "Project" and link your Github repository
+  5. Follow the prompt and waiting to deploy your site
 
 ## 📄 Notes
 
