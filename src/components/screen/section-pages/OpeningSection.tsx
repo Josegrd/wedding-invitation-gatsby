@@ -124,14 +124,14 @@ const OpeningSection = () => {
                 transform={index === activeIndex ? 'scale(1)' : 'scale(0.9)'}
                 transition="transform 3s ease-in-out, opacity 0.5s ease-in-out"
                 cursor="pointer"
-                height="390px"
+                height={{ base: '500px', lg: '390px' }}
                 width="100%"
                 margin={0}
               >
                 <Image
                   src={src}
                   width="100%"
-                  height="390px"
+                  height="100%"
                   objectFit="cover"
                   borderRadius="2px"
                   alt={`Slide ${index + 1}`}

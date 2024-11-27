@@ -4,14 +4,12 @@ import OpeningSection from './OpeningSection';
 import WelcomeSection from './WelcomeSection';
 
 const ScrollPage = () => {
-  const widthScrollSection = useBreakpointValue({ base: 'none', lg: 'block' });
-
   return (
     <Flex
-      width={{base: '100%', lg: '500px'}}
+      width={'100%'}
       justify={'center'}>
     <Box
-      width={{ base: '100%', lg: '500px' }}
+      width={'100%'}
       overflowY="auto"
       height="100vh"
       marginLeft={{ base: '0', lg: 'calc(100% - 500px)' }}
