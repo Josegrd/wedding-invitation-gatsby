@@ -68,6 +68,10 @@ You can check out the live demo of this project here:
 5.  **Galery**
 ![Gambar](./public/screenshoot/galery.png)
 
+6.  **Galery - Detail**
+![Gambar](./public/screenshoot/galleryDetail.png)
+
+
 
 ## 🛠️ Technologies Used
 - Gatsby: A static site generator that powers fast, optimized websites.
