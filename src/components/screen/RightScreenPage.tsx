@@ -28,7 +28,7 @@ const RightSection: FC<RightSectionProps> = ({ setScrollPage }) => {
       <Box
         height={'100vh'}
         position="relative"
-        width="500px"
+        width={{ base: '100%', lg: '500px' }}
         marginLeft={{ base: '0', lg: 'calc(100% - 500px)' }}
       >
         <Box

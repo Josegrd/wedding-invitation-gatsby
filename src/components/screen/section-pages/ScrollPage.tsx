@@ -1,15 +1,17 @@
 import React from 'react';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, useBreakpointValue } from '@chakra-ui/react';
 import OpeningSection from './OpeningSection';
 import WelcomeSection from './WelcomeSection';
 
 const ScrollPage = () => {
+  const widthScrollSection = useBreakpointValue({ base: 'none', lg: 'block' });
+
   return (
     <Flex
-      width={'100%'}
+      width={{base: '100%', lg: '500px'}}
       justify={'center'}>
     <Box
-      width="500px"
+      width={{ base: '100%', lg: '500px' }}
       overflowY="auto"
       height="100vh"
       marginLeft={{ base: '0', lg: 'calc(100% - 500px)' }}
