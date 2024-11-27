@@ -52,6 +52,23 @@ You can check out the live demo of this project here:
 [Wedding Invitation - Live Demo](https://wedding-invitation-gatsby.vercel.app/)
 
 
+## 💾 Preview
+1.  **Home**
+![Gambar](./public/screenshoot/Home.png)
+
+2.  **Home - Tablet Mode**
+![Gambar](./public/screenshoot/Home-tablet.png)
+
+3.  **Welcome**
+![Gambar](./public/screenshoot/Welcome.png)
+
+4.  **Navigation**
+![Gambar](./public/screenshoot/Navigation.png)
+
+5.  **Galery**
+![Gambar](./public/screenshoot/galery.png)
+
+
 ## 🛠️ Technologies Used
 - Gatsby: A static site generator that powers fast, optimized websites.
 - Chakra UI: A simple, modular, and accessible component library that helps build responsive websites with ease.
